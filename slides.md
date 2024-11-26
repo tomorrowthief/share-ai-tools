@@ -36,7 +36,7 @@ The last comment block of each slide will be treated as slide notes. It will be 
 ---
 transition: fade-out
 layout: image-right
-image: https://unsplash.com/illustrations/a-man-sitting-in-front-of-a-computer-screen-hcPWzSYV-wQ
+image: https://plus.unsplash.com/premium_vector-1726325099525-3de2c22bd16d?q=80&w=2360&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 ---
 ## 目录
 
