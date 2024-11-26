@@ -50,7 +50,7 @@ image: https://plus.unsplash.com/premium_vector-1726325099525-3de2c22bd16d?q=80&
 - 提示词
 - Agent
   - Agent 概念
-  - 虚拟团队-蜂群战略
+  - 虚拟团队
 - 总结
 
 ---
@@ -139,60 +139,72 @@ level: 2
 
 任务的描述使用工具，工具就是一个函数
 
-<div grid="~ cols-2 gap-2" m="t-2">
+<div grid="~ cols-3 gap-3" m="t-2">
 
-```javascript
-async function getCurrentWeather(latitude, longitude) {
-  const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&hourly=apparent_temperature`;
-  const response = await fetch(url);
-  const weatherData = await response.json();
-  return weatherData;
-}
+  ```javascript
+  async function getCurrentWeather(latitude, longitude) {
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&hourly=apparent_temperature`;
+    const response = await fetch(url);
+    const weatherData = await response.json();
+    return weatherData;
+  }
 
-async function getLocation() {
-  const response = await fetch("https://ipapi.co/json/");
-  const locationData = await response.json();
-  return locationData;
-}
-```
+  async function getLocation() {
+    const response = await fetch("https://ipapi.co/json/");
+    const locationData = await response.json();
+    return locationData;
+  }
+  ```
 
-<div style="overflow-y: scroll; height: 350px">
+  <div style="overflow-y: scroll; height: 350px">
 
-``` javascript
-const tools = [
-  {
-    type: "function",
-    function: {
-      name: "getCurrentWeather",
-      description: "Get the current weather in a given location",
-      parameters: {
-        type: "object",
-        properties: {
-          latitude: {
-            type: "string",
+  ```javascript
+  const tools = [
+    {
+      type: "function",
+      function: {
+        name: "getCurrentWeather",
+        description: "Get the current weather in a given location",
+        parameters: {
+          type: "object",
+          properties: {
+            latitude: {
+              type: "string",
+            },
+            longitude: {
+              type: "string",
+            },
           },
-          longitude: {
-            type: "string",
-          },
+          required: ["longitude", "latitude"],
         },
-        required: ["longitude", "latitude"],
-      },
-    }
-  },
-  {
-    type: "function",
-    function: {
-      name: "getLocation",
-      description: "Get the user's location based on their IP address",
-      parameters: {
-        type: "object",
-        properties: {},
-      },
-    }
-  },
-];
-```
-</div>
+      }
+    },
+    {
+      type: "function",
+      function: {
+        name: "getLocation",
+        description: "Get the user's location based on their IP address",
+        parameters: {
+          type: "object",
+          properties: {},
+        },
+      }
+    },
+  ];
+  ```
+  </div>
+
+  <div style="overflow-y: scroll; height: 350px">
+
+  ```javascript
+  import langchain.agents from create_tool_calling_agent
+  import Openai
+  model = new OpenAi()
+  agent = create_tool_calling_agent(model, tools, prompt)
+  agent.invoke('do something')
+  ```
+
+  </div>
 </div>
 
 
@@ -208,13 +220,17 @@ Agent 群
 
 如果再加上一个工作调度者 Agent？
 
+<div v-click>
+<h1 style="text-align: center">虚拟团队</h1>
+</div>
+
+
 ---
 level: 2
 layout: image
 image: https://www.developerscantina.com/p/semantic-kernel-multiagents/cover_hu2b89fa2d576fd81acd9ff74385103be4_3830700_800x0_resize_box_3.png
 ---
 # 虚拟团队
-元宇宙？
 
 
 
