@@ -23,12 +23,6 @@ mdc: true
 
 将个体效率极大提升，一人挑战一个队
 
----
-layout: image
-image: https://zk-feisu-file-platform-pub-prod-oss.obsv3.zj-zkr-1.zeekrlife.com/frontend-files/1/67440494e4b04d775767b0e2.png
-backgroundSize: contain
----
-
 <!--
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
 -->
@@ -276,11 +270,4 @@ level: 2
   * AI 发展过快，中间有一些不好的产品或者不成熟的产品，可能会引导错误的方向
   * 并不是万能的：目前大模型还只擅长处理具体性任务，对于一些系统设计，框架，知识体系构建层面上的问题需要自行积累
 
-
----
-level: 2
-layout: image
-image: https://zk-feisu-file-platform-pub-prod-oss.obsv3.zj-zkr-1.zeekrlife.com/frontend-files/1/67442e8de4b01367666a74cc.png
-backgroundSize: contain
----
 
