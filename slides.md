@@ -5,12 +5,9 @@ theme: seriph
 # like them? see https://unsplash.com/collections/94734566/slidev
 background: https://images.unsplash.com/photo-1568983268695-74a04650c8b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80
 # some information about your slides (markdown enabled)
-title: Welcome to Slidev
+title: 技术分享
 info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
+  ## 技术分享 markdown
 # apply unocss classes to the current slide
 class: text-center
 # https://sli.dev/features/drawing
@@ -57,7 +54,6 @@ image: https://images.unsplash.com/photo-1662581871625-7dbd3ac1ca18?ixlib=rb-4.0
 - 总结
 
 ---
-transition: slide-up
 level: 2
 ---
 
@@ -69,7 +65,6 @@ level: 2
 
 
 ---
-transition: slide-up
 level: 2
 ---
 
@@ -83,7 +78,6 @@ level: 2
 
 
 ---
-transition: slide-up
 level: 2
 ---
 
@@ -94,7 +88,6 @@ level: 2
 
 
 ---
-transition: slide-up
 level: 2
 ---
 
@@ -127,7 +120,6 @@ main();
 ```
 
 ---
-transition: slide-up
 level: 2
 ---
 
@@ -139,7 +131,6 @@ level: 2
 
 
 ---
-transition: slide-up
 level: 2
 ---
 
@@ -206,7 +197,6 @@ const tools = [
 
 
 ---
-transition: slide-up
 level: 2
 ---
 
@@ -219,7 +209,6 @@ Agent 群
 如果再加上一个工作调度者 Agent？
 
 ---
-transition: slide-up
 level: 2
 layout: image
 image: https://www.developerscantina.com/p/semantic-kernel-multiagents/cover_hu2b89fa2d576fd81acd9ff74385103be4_3830700_800x0_resize_box_3.png
@@ -227,15 +216,6 @@ image: https://www.developerscantina.com/p/semantic-kernel-multiagents/cover_hu2
 # 虚拟团队
 元宇宙？
 
-
----
-level: 2
----
-# 提示词
-与大模型交互的唯一方式
-
-
-![图片](https://cdn.prod.website-files.com/63e677cf5f9ef0afdbe871b8/64cac23d5107eb3c60973590_Prompt%20Engineering%20101%20-%20Promptitude.io%20-%20Structure.webp)
 
 
 ---
@@ -247,22 +227,41 @@ level: 2
 
 [提示词大全](https://www.promptingguide.ai/)
 
+---
+layout: image-right
+image: https://zk-feisu-file-platform-pub-prod-oss.obsv3.zj-zkr-1.zeekrlife.com/frontend-files/1/67452be0e4b04d775767bb28.png
+backgroundSize: contain
+---
+# 提示词
+与大模型交互的唯一方式
+
+举个例子：基于角色模型的提示词结构
+
+
+---
+level: 2
+---
+# 提示词
+与大模型交互的唯一方式
+
+
+![提示词大全](https://cdn.prod.website-files.com/63e677cf5f9ef0afdbe871b8/64cac23d5107eb3c60973590_Prompt%20Engineering%20101%20-%20Promptitude.io%20-%20Structure.webp)
+
 
 ---
 level: 2
 ---
 # 总结
-如何拥抱 AI
+如何变成特种兵:  工欲善其事，必先利其器
 
-* 拓展个人能力边界，提升效率
-* 工具很多，注意甄选
+* 工具很多，选择一款好用的工具能事半功倍
+* 利用好提示词：跟AI交互的唯一方式
 * 不要被 AI 带歪了：
-  * 比如接触一个未知领域，大的框架的东西也要自己去研究好才能用好AI
-  * 并不是万能的，很多知识体系还是需要自己去积累
+  * AI 发展过快，中间有一些不好的产品或者不成熟的产品，可能会引导错误的方向
+  * 并不是万能的：目前大模型还只擅长处理具体性任务，对于一些系统设计，框架，知识体系构建层面上的问题需要自行积累
 
 
 ---
-transition: slide-up
 level: 2
 layout: image
 image: https://zk-feisu-file-platform-pub-prod-oss.obsv3.zj-zkr-1.zeekrlife.com/frontend-files/1/67442e8de4b01367666a74cc.png
