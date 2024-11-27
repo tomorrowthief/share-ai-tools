@@ -53,8 +53,6 @@ level: 2
 
 # 日常问答
 
-- 门户网站： [小智](https://x.zeekrlife.com)
-- 嵌入到系统里的入口： [敏捷平台](https://agilemp.zeekrlife.com/)
 - Native工具：豆包, OpenAI
 
 
@@ -86,8 +84,6 @@ level: 2
 ---
 
 # 搭建自己的工具
-
-- [智能体搭建平台](https://x.zeekrlife.com/agents)
 - 手写一个
 
 
